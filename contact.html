@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="contact.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+<style>
+  
+  body{
+    padding: 0px;
+    margin: 0px;  
+    /*font-family: sans-serif;*/
+    font-family: Arial, Helvetica, sans-serif;
+   }   
+
+
+ .container1{
+      width: 90%;
+      margin: auto;
+      color: yellow;
+      overflow: hidden;
+    }
+    /* contact form css */
+
+
+    #contact-section{
+      background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url(images/contact.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      width: 100% ;
+      padding-bottom: 2%;
+    }
+
+    #contact-section .container1 h2{
+      text-align: center;
+      /* text-decoration: underline;
+        /* text-decoration-color:red; */
+        text-underline-position: under;
+        color: yellow;
+        letter-spacing: 2px;
+        
+    }
+
+    
+
+    #contact-section .container1 p{
+      text-align: center; 
+      width: 70%; 
+      margin-left: auto;
+       margin-right: auto; 
+       padding-bottom: 3%;
+       color: yellow;
+       letter-spacing:3px;
+    }
+
+    .contact-form i.fa{
+      /* color: red; */
+      /* color: #fff; */
+      font-size: 22px; 
+      padding: 3%;
+      background-color: none;
+      border-radius: 80%;
+      margin: 2%;
+      /* border: 2px solid #fff; */
+      cursor: pointer;
+      border:2px solid rgb(190, 190, 190);
+      color: yellow;
+    }
+    
+    .contact-form i.fa:hover{
+      cursor: pointer;
+      border:2px solid white;
+      color: yellow;
+    }
+     
+      .contact-form{
+        display: grid;
+        grid-template-columns: auto auto;
+         }
+      
+      .form-info{
+        font-size: 16px;
+        font-style: italic;
+        color: yellow;
+        letter-spacing: 2px;
+      }
+      input{
+        padding: 10px;
+        margin:10px;
+        width: 70%;
+        background-color:rgba(136, 133, 133, 0.5);
+        color: yellow;
+        border: none;
+        outline:none;
+      }
+
+      input::placeholder{
+        color: yellow;
+      }
+    
+       textarea{
+      padding: 10px;
+      margin: 10px;     
+      width: 70%;
+      background-color:rgba(136, 133, 133, 0.5);
+      color: yellow;
+      border: none;
+      outline:none;
+     }
+     textarea::placeholder{
+       color: yellow;
+     }
+     
+      
+    
+      .submit{
+      width: 40%;
+      background: none;
+      padding: 4px;
+      outline: none;
+       /* border: 1px solid #fff;
+      color: #fff; */
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      height: 33px;
+      text-align: center;
+      cursor: pointer;
+      letter-spacing: 2px;
+      margin-left: 3%;
+      border:2px solid rgb(190, 190, 190);
+      color: yellow;
+     }
+
+     .submit:hover{
+           border: 1px solid #fff;
+      color: yellow;
+      cursor: pointer;
+     }
+
+        /* media queries */
+    @media (max-width: 768px){
+
+ #contact-section .contact-form{
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+      #contact-section .submit{
+
+        width: 60%;
+      }
+
+  }
+
+</style>
+
+<title>Contact Us</title>
+</head>
+
+<body>
+     <div class="topnav">
+      <img class="img" src="images/img4.lnk">
+      <a class="act" href="home.html"><span
+                                    class="fa fa-home fa-lg"></span> Home</a>
+      <a href="about.html">About</a>
+      <a href="oursevices.html">Our services</a>
+      <a href="Industries.html">Industries</a>
+    <a href="#contact"><span class="fa fa-address-card fa-lg"></span>  contact</a>
+    <a class='pick'>Have waste/Pick up:  6302856457</a>
+    </div>
+        <section id="contact-section">
+           <div class="container1"><br>
+           	 <h2>Contact Us</h2>
+              <p>Email us and keep upto date with our latest news</p>
+             <div class="contact-form">
+
+                  <!-- First grid -->
+               <div>
+                 <i class="fa fa-map-marker"></i><span class="form-info">  Waste Warrirors</span><br>
+                 <i class="fa fa-phone" > </i><span class="form-info">  +91 6302856457</span><br>
+                 <i class="fa fa-envelope"></i><span class="form-info">  WasteWarriors@gmail.com</span>
+               </div>
+               
+                   <!-- second grid -->
+           <div>        
+             <form method="post" action="contact-us.php">
+               <input type="text" name="firstname" placeholder="First Name" required>
+               <input type="text" name="lastname" placeholder="Last Name"><br>
+               <input type="Email" name="email" placeholder="Email" required><br>
+               <input type="text" name="subject" placeholder="Subject of this message"><br>
+               <textarea name="message" name="message" placeholder="Message" rows="5" required></textarea><br>
+               <button class="submit" >Send Message</button> 
+             </form>   
+               </div>
+             </div>
+           </div>
+         </section>
+  <footer class="footer bg-secondary" style="color:black;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto align-self-center">
+                    <a  href="home.html" style="color:black;"><b> Home &nbsp; </b></a>
+                    <a href="oursevices.html" style="color:black;"><b> Ourseervices &nbsp; </b> </a>
+                    <a href="industries.html" style="color:black;"><b> Industries &nbsp; </b></a></li>
+                    <a href="contact.html" style="color:black;"><b> Contact</b></a>
+                </div>
+                <div class="col-auto align-self-center" >
+                    <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i style="color:black;"
+                        class="fa fa-1.5x fa-google-plus"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i style="color:black;"
+                        class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i style="color:black;"
+                        class="fa fa-linkedin"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i style="color:black;"
+                        class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i style="color:black;"
+                        class="fa fa-youtube"></i></a>
+                    <a class="btn btn-social-icon" href="mailto:"><i style="color:black;" class="fa fa-envelope-o"></i></a>   
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p><b> Copyright &copy 2020</b></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+        if ( window.history.replaceState ) {
+          window.history.replaceState( null, null, window.location.href );
+        }
+        </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

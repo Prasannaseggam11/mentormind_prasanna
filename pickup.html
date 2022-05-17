@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>pickup</title>
+    <link rel="stylesheet" href="pickup.css">
+</head>
+<body>
+    <form action="/action_page.php">
+        <div class="pick">
+        <h1>Request a Pickup</h1>
+        <div class="text">
+        <input type="text" id="fname" name="fname" placeholder="Enter your First Name" required><br><br>
+        </div>
+        <div class="text">
+        <input type="text" id="lname" name="lname" placeholder="Enter your Last Name" required><br><br>
+    </div>
+        <div class="text">
+        <input type="text" id="cname" name="cname" placeholder="Enter your Company Name"><br><br>
+    </div>
+        <div class="text">
+        <input type="text" id="adress" name="adress" placeholder="Street Adress" required><br><br>
+    </div>
+        <div class="text">
+        <input type="text" id="pincode" name="pincode" placeholder="Enter your Pincode" required><br><br>
+    </div>
+        <div class="text">
+        <input type="email" id="email" name="email" placeholder="Enter your Email adress" required><br><br>
+    </div>
+        <div class="text">
+        <input type="text" placeholder="pickup date" required><br><br>
+    </div>
+        <div class="text">
+        <input type="text" placeholder="pickup time" required><br><br>
+    </div>
+        <div class="text">
+        <select class="select" name="waste type" id="waste type" required>
+            <option value="select">Select Waste type</option>
+            <option value="32">32 Gallon</option>
+            <option value="64">64 Gallon</option>
+            <option value="96">96 Gallon</option>
+        </select><br><br>
+        </div>
+        <div class="text">
+          <select class="select" name="pay" id="pay" required>
+            <option value="volvo">payment mode</option>
+            <option value="volvo">Cash on pickup</option>
+            <option value="saab">online payment</option>
+          </select><br><br>
+        </div>
+        <input class="sub" type="submit" value="Order Now">
+        </div>
+      </form>  
+</body>
+</html>
